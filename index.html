@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Collector Game </title>
+
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <!--creates header for game-->
+    <div class="jumbotron">
+        <h1 class="text-center">Crystal Collector! </h1>
+
+    </div>
+
+    <div class="container-fluid">
+
+        <!-- Instructions panel  -->
+        <div class="col-lg-12">
+            <div class="card">
+                <h3 class="card-header">How to Play</h3>
+
+
+
+
+                <div class="card-body">
+
+                    <p>
+                        You will be given a random number at the start of the game
+                        <br>
+                        <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to your total score.
+                        <br>
+                        <br> You win the game by matching your total score to the Magic Number. You lose the game if your total
+                        score goes above the Magic Number.
+                        <br>
+                        <br> The value of each crystal is hidden from you until you click on it.
+                        <br>
+                        <br> Each time the game starts, the game will change the values of each crystal.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The "Magic Number" will be displayed here-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col-6">
+                <p>
+                    <span id="magic-number">0</span>
+                </p>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- All 4 crystal images -->
+    <div class="crystals">
+            
+
+    </div>
+
+
+    <!-- Container with both the Total Score and the Wins/Losses-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Total Score:
+                    <span id="total-score">0</span>
+                </p>
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+                <p>Wins:
+                    <span id="wins">0</span>
+                </p>
+                <p>Losses:
+                    <span id="losses">0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Linking to our JavaScript file. -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
